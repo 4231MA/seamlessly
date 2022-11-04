@@ -1,4 +1,4 @@
-package com.cydeo.seamlessly.utilities;
+package com.seamlessly.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
-
     private Driver() {
 
     }

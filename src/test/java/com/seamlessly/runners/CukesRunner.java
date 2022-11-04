@@ -1,4 +1,4 @@
-package com.cydeo.seamlessly.runners;
+package com.seamlessly.runners;
 
 
 import io.cucumber.junit.Cucumber;
@@ -17,9 +17,9 @@ import org.junit.runner.RunWith;
                 "pretty"
         },
         features = "src/test/resources/features",
-        glue = "com/cydeo/library/step_definitions",
+        glue = "com/seamlessly/step_definitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@SEAMLES-2482"
 
 
 

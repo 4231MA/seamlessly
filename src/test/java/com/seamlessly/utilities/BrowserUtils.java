@@ -1,4 +1,4 @@
-package com.cydeo.seamlessly.utilities;
+package com.seamlessly.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,9 @@ import java.util.List;
 import java.util.Set;
 
 public class BrowserUtils {
-     /*
+
+
+    /*
     This method will accept int (int seconds) and execute Thread.sleep
     for given duration
      */
@@ -75,7 +77,7 @@ public class BrowserUtils {
 
     }
 
-    //this method will accept a dropdown as a WebElement
+//this method will accept a dropdown as a WebElement
     public static List<String> dropdownOptionsAsString(WebElement dropdownElement ){
 
         Select select = new Select(dropdownElement);
@@ -92,17 +94,20 @@ public class BrowserUtils {
 
     }
 
-    // This method will accept a group radio buttons as a List of WebElements
+// This method will accept a group radio buttons as a List of WebElements
     //It will loop through the list, and clict to the radio button with provided attributeValue
-    public static  void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
+public static  void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
 
-        for (WebElement each : radioButtons) {
-            if(each.getAttribute("value").equalsIgnoreCase(attributeValue)){
-                each.click();
-            }
-
+    for (WebElement each : radioButtons) {
+        if(each.getAttribute("value").equalsIgnoreCase(attributeValue)){
+            each.click();
         }
 
     }
+
+}
+
+
+
 
 }
